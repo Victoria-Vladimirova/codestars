@@ -15,14 +15,14 @@
     "style-loader": "^0.13.1",
     "stylus": "^0.54.2",
     "stylus-loader": "^2.0.0",
-    "url-loader": "^0.5.7",
-    "webpack": "^1.13.1"
+    "url-loader": "^0.5.7"
   },
   "dependencies": {
-    "http-server": "^0.9.0"
+    "http-server": "^0.9.0",
+    "webpack": "^1.13.1"
   },
   "scripts": {
     "start": "node_modules/.bin/http-server public",
-    "postinstall": "node_modules/.bin/webpack --config ./webpack.config.js --progress --colors"
+    "postinstall": "node_modules/.bin/webpack --config ./webpack.config.js"
   }
 }
