@@ -22,6 +22,7 @@
     "http-server": "^0.9.0"
   },
   "scripts": {
-    "start": "node_modules/.bin/http-server public"
+    "start": "node_modules/.bin/http-server public",
+    "postinstall": "webpack --config ./webpack.config.js --progress --colors"
   }
 }
