@@ -1,7 +1,7 @@
 {
   "name": "DreamSpark_test",
   "version": "0.0.1",
-  "devDependencies": {
+  "dependencies": {
     "babel-core": "^6.10.4",
     "babel-loader": "^6.2.4",
     "babel-preset-es2015": "^6.9.0",
@@ -15,13 +15,12 @@
     "style-loader": "^0.13.1",
     "stylus": "^0.54.2",
     "stylus-loader": "^2.0.0",
-    "url-loader": "^0.5.7"
-  },
-  "dependencies": {
+    "url-loader": "^0.5.7",
     "http-server": "^0.9.0",
     "webpack": "^1.13.1"
   },
   "scripts": {
-    "start": "node_modules/.bin/http-server public"
+    "start": "node_modules/.bin/http-server public",
+    "postinstall": "node_modules/.bin/webpack --config ./webpack.config.js"
   }
 }
