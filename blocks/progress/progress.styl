@@ -1,0 +1,62 @@
+.progress
+    font 25px 'Segoe UI Light'
+
+    display flex
+    align-items baseline
+    justify-content space-between
+
+    width 983px
+    margin-top 95px
+    padding-left 30px
+
+    -webkit-user-select none
+    -moz-user-select none
+    user-select none
+
+    &__task-number
+        color #fff
+
+        &--next-level
+            position relative
+            color #ff9900
+            font 30px 'Segoe UI Bold'
+
+            &::before
+                top -45px
+                content ''
+                position absolute
+                height 35px
+
+            &:nth-child(2)::before
+                background url(images/level-icon.png) 0 0 no-repeat
+                width 27px
+                left -3px
+
+            &:nth-child(6)::before
+                background url(images/level-icon.png) -35px 0 no-repeat
+                width 69px
+                left -24px
+
+            &:nth-child(12)::before
+                background url(images/level-icon.png) -111px 0 no-repeat
+                width 28px
+                left 4px
+
+            &:nth-child(20)::before
+                background url(images/level-icon.png) -146px 0 no-repeat
+                width 37px
+                left -3px
+
+        &--selected
+            position relative
+
+            &::after
+                position absolute
+                top 33px
+                left -37px
+                width 0
+                height 13px
+                content ''
+                border-right 40px solid transparent
+                border-bottom 40px solid #fff
+                border-left 40px solid transparent

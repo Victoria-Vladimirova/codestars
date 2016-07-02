@@ -1,0 +1,126 @@
+.list-steps
+    display flex
+    justify-content center
+    text-align left
+
+    margin 15px 0 0
+    padding-left 0
+
+    list-style none
+    line-height 28px
+
+    &__item
+        font 24px 'Segoe UI Light'
+        line-height 28px
+        position relative
+        width 298px
+        margin 0 15px
+        color #fff
+
+    &__item-icon
+        position relative
+        height 106px
+
+    &__item-description
+        position relative
+        padding 0 0 0 30px
+
+        &::before
+            position absolute
+            left 0
+            top 1px
+
+    &__item:nth-of-type(1) .list-steps__item-description
+        padding 0 0 0 25px
+
+        &::before
+            left -5px
+            content '1.'
+
+    &__guitar-animation-step,
+    &__download-icon,
+    &__circle-star-icon
+        position relative
+        visibility hidden
+        opacity 0
+
+    &__guitar-animation-step:nth-of-type(1)
+        top 46px
+        left 6px
+        transition visibility 1s linear .5s, opacity .7s linear
+
+    &__guitar-animation-step:nth-of-type(2)
+        top -20px
+        left 60px
+        transition visibility .3s linear .6s, opacity .3s linear .6s
+
+    &__guitar-animation-step:nth-of-type(3)
+        top -45px
+        left 33px
+        transition visibility .3s linear .8s, opacity .3s linear .8s
+
+    &__guitar-animation-step:nth-of-type(4)
+        top -71px
+        left 134px
+        transition visibility .3s linear 1s, opacity .3s linear 1s
+
+    &__item:nth-of-type(1):hover  .list-steps__guitar-animation-step
+        visibility visible
+        opacity 1
+
+    &__item:nth-of-type(1) .list-steps__item-icon
+        background url(images/1.png) -1px 39px no-repeat
+        width 112px
+        top -12px
+        left 70px
+
+    &__vs-icon,
+    &__star-icon
+        position relative
+        opacity 1
+
+    &__item:nth-of-type(2) .list-steps__item-description::before
+        content '2.'
+
+    &__vs-icon
+        top 31px
+        left 88px
+        transition visibility .6s linear .5s, opacity .6s linear .2s, top .7s linear
+
+    &__download-icon
+        top -20px
+        left 11px
+        transition visibility .5s linear .5s, opacity .8s linear .2s, top .6s linear
+
+    &__item:nth-of-type(2):hover .list-steps__vs-icon
+        visibility hidden
+        opacity 0
+        top -20px
+
+    &__item:nth-of-type(2):hover .list-steps__download-icon
+        visibility visible
+        opacity 1
+        top 9px
+
+    &__item:nth-of-type(3) .list-steps__item-description::before
+        content '3.'
+
+    &__star-icon
+        top 29px
+        left 112px
+        transition visibility .5s linear .5s, opacity .8s linear .2s, left .9s ease-in-out .25s
+
+    &__circle-star-icon
+        left -100px
+        top 16px
+        transition visibility .5s linear .5s, opacity .8s linear .2s, left 1.3s ease-in-out .05s
+
+    &__item:nth-of-type(3):hover .list-steps__star-icon
+        visibility hidden
+        opacity 0
+        left 220px
+
+    &__item:nth-of-type(3):hover .list-steps__circle-star-icon
+        visibility visible
+        opacity 1
+        left 34px

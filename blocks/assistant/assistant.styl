@@ -1,0 +1,40 @@
+.assistant
+    position relative
+    max-width 1472px
+    margin 0 auto
+
+    &__image
+        background url(images/assistant.png) 0 0 no-repeat
+        width 223px
+        height 222px
+        position absolute
+        left 88px
+        bottom 0
+
+    &__message
+        background #eee
+        width 457px
+        height 132px
+        position absolute
+        left 237px
+        bottom 227px
+        font 24px 'Segoe UI Light'
+
+        a
+            text-decoration none
+            color #ff9900
+
+        span
+            margin 18px 28px
+            display inline-block
+            line-height 30px
+
+        &::after
+            position absolute
+            top 132px
+            left 23px
+            width 0
+            height 0
+            content ''
+            border-top 26px solid #eee
+            border-right 26px solid transparent

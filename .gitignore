@@ -1,0 +1,4 @@
+node_modules/
+public/
+blocks/**/*.css
+.idea/

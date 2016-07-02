@@ -1,0 +1,102 @@
+@import '../cloud/cloud.styl'
+
+.task-page-content
+    background #fff
+    height 1022px
+    position relative
+
+    &__title
+        font 48px 'Segoe UI Light'
+        margin 0 0 0 -128px
+        padding 61px 0 37px
+        text-align center
+        line-height 50px
+
+    &__column-title
+        font 24px 'Segoe UI Semibold'
+
+    &__task-column
+        width 603px
+        margin-right 60px
+
+    &__task
+        margin -5px 0 31px
+        line-height 30px
+
+    &__answer-column
+        width 299px
+
+    &__answer-field
+        resize none
+        width 100%
+        height 127px
+        background #ebebeb
+        border none
+        outline-color #ff9900
+        padding 15px
+        font 18px 'Segoe UI Light'
+
+    &__answer-button
+        height 70px
+        width 100%
+        border none
+        background #ff9900
+        color #fff
+        text-align center
+        font 24px 'Segoe UI Semibold'
+        margin-top 10px
+        cursor pointer
+        outline none
+        padding 15px
+        position relative
+
+        &-text--hover
+            margin-right 6px
+            display none
+
+        &--left
+            text-align left
+
+        &:hover .task-page-content__answer-button-text--hover
+            display inline
+
+    &__vs
+        margin-top 50px
+
+        .task-page-content__column-title
+            line-height 28px
+            margin 53px 0 -12px
+
+    &__vs-description
+        line-height 30px
+
+        &:nth-of-type(2)
+            margin-top: -6px
+
+    &__answer-button-progress
+        display none
+        border-top 70px solid #f60
+        border-right 28px solid transparent
+        width 0
+        position absolute
+        top 0
+        left 0
+
+    &__answer-button-text
+        position relative
+
+.text-container
+    width 968px
+    margin 0 auto
+
+.column-container
+    display flex
+    font 24px 'Segoe UI Light'
+
+    a
+        color #ff9900
+        text-decoration none
+        cursor pointer
+
+        img
+            margin 0 15px -5px 0
