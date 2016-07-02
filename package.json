@@ -23,6 +23,6 @@
   },
   "scripts": {
     "start": "node_modules/.bin/http-server public",
-    "postinstall": "webpack --config ./webpack.config.js --progress --colors"
+    "postinstall": "node_modules/.bin/webpack --config ./webpack.config.js --progress --colors"
   }
 }
