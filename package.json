@@ -22,7 +22,6 @@
     "webpack": "^1.13.1"
   },
   "scripts": {
-    "start": "node_modules/.bin/http-server public",
-    "postinstall": "node_modules/.bin/webpack --config ./webpack.config.js"
+    "start": "node_modules/.bin/http-server public"
   }
 }
